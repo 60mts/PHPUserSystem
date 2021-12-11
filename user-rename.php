@@ -11,24 +11,25 @@
 <body>
     <?php 
     require_once 'connect.php';
+
     $bilgilerims=$db->prepare("SELECT * from bilgiler where b_id=:b_id");
-    $bilgilerims->execute(array(
-        'id'=>$_GET['b_id']
-    ));
+    $bilgilerims->execute(array('b_id'=>$_GET['b_id']));
     $bilgilerimc=$bilgilerims->fetch(PDO::FETCH_ASSOC)
     ?>
 
 <div id="form-out" style="margin:50px;  margin:40px; ">
     <h5>KAYDINIZI DÜZENLEYİN</h5>
     <form action="islem_Succes.php" method="POST">
-<input type="text" name="b_id" value="<?php echo $bilgilerimc['b_id'] ?>">
-  <input type="text" class="form-control"  style="width:400px; margin-top:20px;"id=""  value="<?php echo $bilgilerimc['b_ad'] ?>" name=""required="">
-  <input type="text" class="form-control"  style="width:400px;margin-top:20px;"id="" value="" name="b_soyad" required="">
+<input type="hidden" name="b_id" value=" <?php echo $bilgilerimc['b_id'] ?>">
 
-  <input type="email" class="form-control"  style="width:400px; margin-top:20px; "id=""  value="" name="b_mail" required="">
-  <input type="text" class="form-control"  style="width:400px; margin-top:20px; "id=""  value="" name="b_yas" required="">
+  <input type="text" class="form-control"  style="width:400px; margin-top:20px;" value="<?php echo $bilgilerimc['b_ad'] ?>" name="b_ad" >
+
+  <input type="text" class="form-control"  style="width:400px;margin-top:20px;" value="<?php echo $bilgilerimc['b_soyad'] ?>" name="b_soyad" >
+
+  <input type="email" class="form-control"  style="width:400px; margin-top:20px;" value="<?php echo $bilgilerimc['b_mail'] ?>" name="b_mail" >
+  <input type="text" class="form-control"  style="width:400px; margin-top:20px;"  value="<?php echo $bilgilerimc['b_yas'] ?>" name="b_yas" >
 
 
-<button type="submit" name="i_send" >Gönder</button>
+<button type="submit" name="update" >DÜZENLE</button>
 </body>
 </html>

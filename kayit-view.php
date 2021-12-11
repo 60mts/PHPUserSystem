@@ -37,13 +37,13 @@ $bilgilerc=$db->prepare("SELECT from * bilgiler")
   <td><?php  echo $bilgilerc['b_yas']?> </td>
   <td><?php  echo $bilgilerc['b_zaman']?> </td>
 
-  <td><a href="user-delete-page.php"><button id="delete" class="btn btn-danger"><i class="bi bi-x-lg"></i></button></a>
+  <td><a href="islem_Succes.php?b_id=<?php echo $bilgilerc['b_id'] ?>&b_delete=ok"><button id="delete" class="btn btn-danger"><i class="bi bi-x-lg"></i></button></a>
   <a href="user-rename.php?b_id=<?php echo $bilgilerc['b_id']?>">  <button id="edit" class="btn btn-warning"> <i class="bi bi-pencil-square"></i></button></a>
  <a href="#"> <button id="detaylı-secenekler" class="btn btn-warning"> <i class="bi bi-three-dots-vertical"></i></button></td></a>
 </tr>
 <?php   } ?>
 </table>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">tüm kayıtları gör</a>
   </div>
   <div class="card-footer text-muted">
   © 2021  by Muhammed Tayyib Şahin
