@@ -12,7 +12,6 @@ class BookSCategories{
     private $price="50 ₺"; // gizli oldugu için hata veriyor.
 
 }
-
 class SoftwareBooks extends BookSCategories{
 
     public function ViewCategory(){
@@ -21,7 +20,6 @@ class SoftwareBooks extends BookSCategories{
         echo "Book Author : ".$this->author.'<br>';
         echo "Book Category : ".$this->category.'<br>';
         echo "Book Price : ".$this->price.'<br>';
-
     }
 }
 
