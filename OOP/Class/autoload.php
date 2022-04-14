@@ -5,7 +5,7 @@
     require_once $class.".php";
     });
 
-$class1=new Class1();
+    $class1=new Class1();
 
-$class2=new Class2();
+    $class2=new Class2();
 ?>
