@@ -2,6 +2,7 @@
 class Scouts{
 }
 if(class_exists('Scouts')){
+    
     echo "böyle bir kurs bulunmakta.";
 }
 else {
