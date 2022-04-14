@@ -1,15 +1,15 @@
-<?php 
+    <?php 
 
-    //final classları genişleyemez ve miras olamaz.
-final class Course{
+        //final classları genişleyemez ve miras olamaz.
+    final class Course{
 
-    public function write(){
+        public function write(){
 
-        echo "Php";
+            echo "Php";
+        }
     }
-}
-   class bottom extends Course{
+    class bottom extends Course{
 
-}
+    }
 
-?>
+    ?>

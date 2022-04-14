@@ -16,7 +16,9 @@
     $this->author=$author;
 
     $this->price=$price;
+    
     }
+
     public function list(){
 
     echo '<b>'.'Book Name :'.'</b>'.$this->name.'<br>';
@@ -24,8 +26,10 @@
     echo '<b>'.'Book Author :'.'</b>'.$this->author.'<br>';
 
     echo '<b>'.'Book price :'.'</b>'.$this->price.'<br>';
+
     } }?>
-    <div id="Books" align="Center" style="border:1px solid red; padding:3px; font-family:'Poppins';"> 
+
+    <div id="Books"align="Center"style="border:1px solid red; padding:3px; font-family:'Poppins';"> 
 
     <?php
 
