@@ -12,7 +12,7 @@ class Bread
         return $this->kdv*$fiyat;
     }
 }
-Class  Diesel{
+class  Diesel{
 
     public $kdv;
 
