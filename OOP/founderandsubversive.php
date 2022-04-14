@@ -7,8 +7,8 @@
     
     public function __construct()
     {
-        //kurucu method:sınıf cagrıldıgında yerine getirilen
-
+        //kurucu method:sınıf cagrıldıgında yerine getirilen.
+        
         echo 'başladı'.'<br>';
     }
      public function __destruct()

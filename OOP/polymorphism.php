@@ -1,30 +1,27 @@
 <?php 
 
-
-interface Hello{
+    interface Hello{
 
     public function Language($name);      
     }
 
-class Turkish implements Hello{
+    class Turkish implements Hello{
     
     public function Language($name){
     echo "Merhaba ".$name;   
     }
 }
-class English implements Hello{
+    class English implements Hello{
 
     public function Language($name){
         echo "Hello ".$name;
     }
 }
 
+    $tr = new Turkish();
+    $tr->Language("Tayyib");
 
-
-$tr = new Turkish();
-$tr->Language("Tayyib");
-
-$eng=new English();
-$eng->Language("TAYYİB");
+    $eng=new English();
+    $eng->Language("TAYYİB");
 
 ?>
