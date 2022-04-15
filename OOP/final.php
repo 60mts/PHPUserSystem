@@ -1,7 +1,7 @@
     <?php 
 
         //final classları genişleyemez ve miras olamaz.
-        
+
     final class Course{
 
         public function write(){
@@ -12,5 +12,4 @@
     class bottom extends Course{
 
     }
-
     ?>

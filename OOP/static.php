@@ -1,7 +1,4 @@
     <?php 
-
-        //Static kelimesi methodta kullanılırsa new kullanmadan çağırma.
-
     class Class1{
 
     public static function method1()
@@ -15,5 +12,9 @@
 
     Class1::method1();
 
+ //Static kelimesi methodta kullanılırsa new kullanmadan çağırma.
 
     ?>
+
+
+
